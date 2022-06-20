@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f8f8f8;
+}
+header {
+    position: relative;
+    padding: 18px 32px;
+    background-color: #006393;
+    box-shadow: 0px 0px 5px #444;
+}
+header li {
+    list-style-type: none;
+}
+header a, .pseudo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 16px 25px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.pseudo {
+    text-transform: initial;
+}
+header a:hover, .pseudo:hover {
+    color: #53ffff;
+}
+header #home:hover, header #sign-out:hover {
+    fill: #53ffff;
+}
+header ul ul {
+    position: absolute;
+    display: none;
+    background-color: #006393;
+    top: 100%;
+    right: 0;
+}
+header ul ul li a {
+    font-size: 0.8rem;
+    padding: 8px;
+
+}
+header .suppr {
+    color: #ff1717;
+}
+header .suppr:hover {
+    color: red;
+}
+a {
+    display: inline-block;
+    color: #111;
+    text-decoration: none;
+}
+h2 {
+    margin: 40px 0;
+    text-align: center;
+}
+h3 {
+    margin: 15px 0;
+}
+label {
+    display: inline-block;
+}
+input {
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    outline: none;
+}
+input:last-of-type {
+    margin-bottom: 0;
+}
+input[type="search"] {
+    width: 250px;
+}
+textarea {
+    outline: none;
+    width: 450px; 
+    height: 80px;
+    padding: 8px;
+    margin-bottom: 20px;
+    resize: none;
+}
+.echec {
+    color: red;
+    margin-bottom: 12px;
+}
+.liste {
+    font-size: 1.4rem;
+    border: 1px solid #111;
+    padding: 8px;
+    background-color: #fff;
+}
+.liste img {
+    width: 100px;
+    height: 100px;
+}
+.liste p {
+    margin-bottom: 18px;
+}
+.liste:hover {
+    background-color: #b9e5ff;
+}
+img {
+    width: 350px;
+    height: 350px;
+}
+.annonce p, .annonce h2 {
+    margin-left: 65px;
+}
+.annonce p:not(:last-of-type) {
+    margin-bottom: 50px;
+}
+.prix {
+    font-size: 1.5rem;
+    border: 1px dotted #111;
+    background-color: #64b4e3;
+}
+.offre, .mes-offres {
+    border: 1px solid #111;
+    padding: 12px;
+    text-align: initial;
+    margin-bottom: 10px;
+}
+.offre:first-of-type h4::after {
+    content: "Meilleure offre !";
+    background-color: gold;
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 1rem;
+}
+h4, .offre p, .mes-offres p {
+    margin-bottom: 12px;
+}
+.refuser, .suppr-compte {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: #fff;
+    padding: 18px;
+    border: 1px solid #111;
+}
+.suppr-compte {
+    color: red;
+    width: 500px;
+    height: 150px;
+    font-size: 1.2rem;
+}
+.suppr-compte button {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.refuser p {
+    font-size: 1.3rem;
+}
+.refuser a, .refuser button {
+    font-size: 18px;
+}
+.select {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 350px;
+    border: 1px solid #111;
+    padding: 8px;
+    background-color: #fff;
+}
+.select p {
+    margin-bottom: 12px;
+}
+/***************************/
+/* MISE EN PAGE */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    margin: 0 auto;
+    max-width: 750px;
+}
+.container-form {
+    margin: 0 auto;
+    max-width: 420px;
+    border: 1px solid #111;
+    padding: 8px;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.text-center {
+    text-align: center;
+}
+.block {
+    display: block;
+}
+.line-height-25 {
+    line-height: 25px;
+}
+.inerhit {
+    display: inherit;
+}
+/**********************************/
+/* WIDTH */
+.large-100 {
+    width: 100%;
+}
+.large-80 {
+    width: 80%;
+}
+.large-50 {
+    width: 50%;
+}
+.large-20 {
+    width: 20%;
+}
+
+/*********************************/
+/* Margin / padding */
+.margin-top-20 {
+    margin-top: 20px;
+}
+.margin-top-50 {
+    margin-top: 50px;
+}
+.margin-right-50 {
+    margin-right: 50px;
+}
+/********************************/
+/* BTN */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #111;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s
+}
+.btn:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.btn-accepter {
+    padding: 6px 10px;
+    background-color: #94ff94;
+}
+.btn-accepter:hover {
+    background-color: #40bf40;
+    fill: #fff;
+}
+.btn-refuser {
+    padding: 6px 10px;
+    background-color: #ff8585;
+}
+
+.btn-refuser:hover {
+    background-color: #e62323;
+    fill: #fff;
+}
+
